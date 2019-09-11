@@ -1,0 +1,1 @@
+This machine calculated all 41538 prime numbers under 500000 in -30.4257 seconds
