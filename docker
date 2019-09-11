@@ -32,4 +32,13 @@
  sudo apt update
  sudo apt install time nano gcc
  gcc nome_arquivo.c -o arquivo
- /usr/bin/time -f "\nResultado Time:\nTempo decorrido: %E \nMedia de memoria usada: %K \nPercentual de CPU: %P \nVarrido da Memoria Principal: %W \nTempo real decorrido: %e" -a -o teste.log ./ads
+ 
+ nano loop.sh
+   #!/bin/bash
+
+    for((i=0; i<= 5; i++))
+    do
+      /usr/bin/time -f "\nResultado Time:\nTempo decorrido: %E \nMedia de memoria usada: %K \nPercentual de CPU: %P \nVarrido da Memoria Principal: %W \nTempo real decorrido: %e" -a -o ads_docker.log ./main
+    done
+  
+  bash loop.sh
