@@ -26,10 +26,10 @@
 # https://stackoverflow.com/questions/52545945/docker-install-on-linux-mint-19-tara
 
 ## Criando contêiner com parametros definidos ##
- sudo docker run -it --cpus=1 -m 1024M --name teste ubuntu
-
+ sudo docker run -it --cpus=1 --cpuset-cpus="0" -m 1024M --name teste2 ubuntu
+ 
 ### NO DOCKER ####
  sudo apt update
- sudo apt install time nano
+ sudo apt install time nano gcc
  gcc nome_arquivo.c -o arquivo
  /usr/bin/time -f "\nResultado Time:\nTempo decorrido: %E \nMedia de memoria usada: %K \nPercentual de CPU: %P \nVarrido da Memoria Principal: %W \nTempo real decorrido: %e" -a -o teste.log ./ads
