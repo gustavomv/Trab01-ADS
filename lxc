@@ -1,0 +1,14 @@
+sudo lxc-create -t download -n example
+
+Distribution: ubuntu
+Release: bionic
+Architecture: amd64
+
+sudo lxc-start -n example -d
+sudo lxc-cgroup -n example memory.limit_in_bytes 1024M
+sudo lxc-cgroup -n example cpuset.cpus 0
+
+sudo lxc-attach -n example
+
+#No container
+apt install gcc time
