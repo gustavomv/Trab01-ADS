@@ -29,5 +29,7 @@
  sudo docker run -it --cpus=1 -m 1024M --name teste ubuntu
 
 ### NO DOCKER ####
- sudo apt install time
+ sudo apt update
+ sudo apt install time nano
+ gcc nome_arquivo.c -o arquivo
  /usr/bin/time -f "\nResultado Time:\nTempo decorrido: %E \nMedia de memoria usada: %K \nPercentual de CPU: %P \nVarrido da Memoria Principal: %W \nTempo real decorrido: %e" -a -o teste.log ./ads
