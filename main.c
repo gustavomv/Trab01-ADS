@@ -23,7 +23,7 @@ int main() {
         }
         if(i == num)
             primes++;
-//      fprintf(fp, "%d prime numbers calculated\n",primes);
+      fprintf(fp, "%d prime numbers calculated\n",primes);
     }
 
     end = clock();
