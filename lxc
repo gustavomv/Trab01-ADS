@@ -6,7 +6,7 @@ Architecture: amd64
 
 sudo lxc-start -n example -d
 sudo lxc-cgroup -n example memory.limit_in_bytes 1024M
-sudo lxc-cgroup -n example cpuset.cpus 0
+sudo lxc-cgroup -n example cpuset.cpus 1
 
 sudo lxc-attach -n example
 
